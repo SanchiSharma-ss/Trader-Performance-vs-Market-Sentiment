@@ -232,6 +232,57 @@ Possible extensions of this project include:
 - Performing time-series forecasting using sentiment indicators.
 
 ---
+# Project Summary
+
+## Methodology
+
+This project follows a structured data analytics workflow to investigate the relationship between Bitcoin market sentiment and trader performance on Hyperliquid.
+
+The analysis consisted of three stages:
+
+1. **Data Preparation**
+   - Loaded and inspected the Fear & Greed Index and Hyperliquid trading datasets.
+   - Handled missing values and duplicate records.
+   - Converted timestamps into a common date format.
+   - Merged both datasets on daily dates to associate each trade with the prevailing market sentiment.
+
+2. **Feature Engineering**
+   - Created trader-level and daily-level features including:
+     - Daily Profit & Loss (PnL)
+     - Win Rate
+     - Average Trade Size
+     - Trade Count
+     - Daily Trading Volume
+     - Open Position indicators
+     - Position Type (Opening / Closing)
+
+3. **Exploratory Data Analysis**
+   - Compared trader performance across different market sentiment categories.
+   - Examined changes in trading behavior, including trade frequency, position sizes, and long/short bias.
+   - Segmented traders into Frequent vs. Infrequent Traders and Consistent vs. Inconsistent Winners to identify behavioral differences.
+
+---
+
+## Key Insights
+
+- Traders generally achieved higher realized profitability during Greed and Extreme Greed market conditions compared with Fear periods.
+- Trading activity increased during stronger market sentiment (Fear and Greed) relative to Neutral conditions.
+- Trader positioning changed with sentiment, with long positions becoming more common during optimistic markets.
+- Frequent traders demonstrated slightly higher average win rates than infrequent traders.
+- Consistent winners substantially outperformed inconsistent traders, highlighting clear differences in trading effectiveness.
+
+---
+
+## Strategy Recommendations
+
+Based on the analysis, the following practical recommendations can be made:
+
+- **Incorporate market sentiment into trading decisions**, as trader performance and behavior vary across sentiment conditions.
+- **Monitor trade frequency during high-emotion markets**, since trading activity increases significantly during Fear and Greed periods.
+- **Evaluate trader consistency rather than only total profitability**, as consistently profitable traders exhibit stronger long-term performance characteristics.
+- **Use sentiment as a complementary indicator** alongside technical and risk management strategies rather than relying on it in isolation.
+
+Overall, the analysis demonstrates that market sentiment provides valuable context for understanding trader behavior and can contribute to more informed trading strategies.
 
 ## Author
 
